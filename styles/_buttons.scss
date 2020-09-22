@@ -1,25 +1,20 @@
 // styling for components
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .btn {
   padding: 10px 20px;
   border-radius: 6px;
-  background: $blue;
+  background: $grey;
   color: white;
   border: none;
   outline: none;
+  transition: $transition;
   &:hover {
-    background: $blue-hover;
+    background: $grey-hover;
   }
   &:active {
-    background: $blue-active;
+    background: $grey-active;
   }
   &:disabled {
-    background: $blue-disabled;
+    background: $grey-disabled;
   }
   &__red {
     background: $red;
@@ -31,6 +26,42 @@ body {
     }
     &:disabled {
       background: $red-disabled;
+    }
+  }
+  &__yellow {
+    background: $yellow;
+    &:hover {
+      background: $yellow-hover;
+    }
+    &:active {
+      background: $yellow-active;
+    }
+    &:disabled {
+      background: $yellow-disabled;
+    }
+  }
+  &__blue {
+    background: $blue;
+    &:hover {
+      background: $blue-hover;
+    }
+    &:active {
+      background: $blue-active;
+    }
+    &:disabled {
+      background: $blue-disabled;
+    }
+  }
+  &__green {
+    background: $green;
+    &:hover {
+      background: $green-hover;
+    }
+    &:active {
+      background: $green-active;
+    }
+    &:disabled {
+      background: $green-disabled;
     }
   }
 }
