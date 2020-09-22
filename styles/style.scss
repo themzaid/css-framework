@@ -4,5 +4,39 @@
 @import "navigation";
 @import "tables";
 
-
-// He test
+// styling for components
+.container {
+  width: 800px;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 0 auto;
+  .btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #2a7cfe;
+    color: white;
+    border: none;
+    outline: none;
+    &:hover {
+      background: #438bfe;
+    }
+    &:active {
+      background: #2670e5;
+    }
+    &:disabled {
+      background: rgba(42, 124, 254, 0.5);
+    }
+    &-red {
+      background: #f01836;
+      &:hover {
+        background: #f1314c;
+      }
+      &:active {
+        background: #d61631;
+      }
+      &:disabled {
+        background: rgba(238, 24, 54, 0.5);
+      }
+    }
+  }
+}
