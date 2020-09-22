@@ -4,38 +4,75 @@
 @import "navigation";
 @import "tables";
 
+// variables
+
+// Colors
+$blue: hsla(217, 99, 58, 1);
+$red: hsla(352, 88, 52, 1);
+$yellow: hsla(40, 93, 55, 1);
+$green: hsla(144, 65, 47, 1);
+$grey: hsla(260, 4, 31, 1);
+
+// for buttons
+// on hover
+$blue-hover: hsla(217, 99, 63, 1);
+$red-hover: hsla(352, 88, 57, 1);
+$yellow-hover: hsla(40, 93, 60, 1);
+$green-hover: hsla(144, 65, 52, 1);
+$grey-hover: hsla(260, 4, 36, 1);
+// on active
+$blue-active: hsla(217, 79, 52, 1);
+$red-active: hsla(352, 88, 46, 1);
+$yellow-active: hsla(40, 93, 49, 1);
+$green-active: hsla(144, 65, 41, 1);
+$grey-active: hsla(260, 4, 21, 1);
+// disabled
+$blue-active: hsla(217, 99, 52, 0.5);
+$red-active: hsla(352, 88, 46, 0.5);
+$yellow-active: hsla(40, 93, 49, 0.5);
+$green-active: hsla(144, 65, 41, 0.5);
+$grey-active: hsla(260, 4, 21, 0.5);
+
 // styling for components
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  width: 800px;
-  padding: 5px;
-  border: 1px solid black;
+  width: 100%;
+  min-width: 600px;
+  box-sizing: border-box;
+  padding: 50px;
+  //   border: 10px solid black;
   margin: 0 auto;
   .btn {
     padding: 10px 20px;
     border-radius: 6px;
-    background: #2a7cfe;
+    background: $blue;
     color: white;
     border: none;
     outline: none;
     &:hover {
-      background: #438bfe;
+      background: $blue-hover;
     }
     &:active {
-      background: #2670e5;
+      background: $blue-active;
     }
     &:disabled {
-      background: rgba(42, 124, 254, 0.5);
+      background: $blue-disabled;
     }
-    &-red {
-      background: #f01836;
+    &__red {
+      background: $red;
       &:hover {
-        background: #f1314c;
+        background: $red-hover;
       }
       &:active {
-        background: #d61631;
+        background: $red-active;
       }
       &:disabled {
-        background: rgba(238, 24, 54, 0.5);
+        background: $red-disabled;
       }
     }
   }
