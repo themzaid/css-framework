@@ -1,0 +1,48 @@
+.form {
+  .form-group {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+    label {
+      font-size: 13px;
+      color: $txt-ter;
+      font-weight: 500;
+    }
+    input {
+      color: $txt-sec;
+      padding: 10px 12px;
+      font-size: 15px;
+      border-radius: 6px;
+      border: 1px solid $txt-ter;
+      outline: none;
+      transition: 0.15s ease-out;
+      margin: 3px 0 10px 0;
+      &::placeholder {
+        letter-spacing: 0.3px;
+      }
+      &:focus {
+        box-shadow: $primary-focus;
+        border: 1px solid $primary;
+        + {
+          label {
+            color: $primary;
+          }
+        }
+      }
+    }
+    &-yellow {
+      input {
+        &:focus {
+          border: 1px solid $yellow;
+          box-shadow: $yellow-focus;
+          + {
+            label {
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}

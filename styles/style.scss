@@ -1,35 +1,59 @@
 // variables
 $transition: 150ms ease-out;
 // Colors
-$blue: hsla(217, 99, 58, 1);
+// solid
+$primary: hsla(217, 99, 58, 1);
 $red: hsla(352, 88, 52, 1);
 $yellow: hsla(40, 93, 55, 1);
 $green: hsla(144, 65, 47, 1);
 $grey: hsla(260, 4, 31, 1);
 
+// text
+$txt-pri: hsla(210, 3, 12, 1);
+$txt-sec: hsla(210, 3, 31, 1);
+$txt-ter: hsla(210, 3, 50, 1);
+$txt-qua: hsla(210, 8, 70, 1);
+
 // for buttons
 // on hover
-$blue-hover: hsla(217, 99, 63, 1);
+$primary-hover: hsla(217, 99, 63, 1);
 $red-hover: hsla(352, 88, 57, 1);
 $yellow-hover: hsla(40, 93, 60, 1);
 $green-hover: hsla(144, 65, 52, 1);
 $grey-hover: hsla(260, 4, 36, 1);
 // on active
-$blue-active: hsla(217, 79, 52, 1);
+$primary-active: hsla(217, 79, 52, 1);
 $red-active: hsla(352, 88, 46, 1);
 $yellow-active: hsla(40, 93, 49, 1);
 $green-active: hsla(144, 65, 41, 1);
 $grey-active: hsla(260, 4, 21, 1);
 // disabled
-$blue-disabled: hsla(217, 99, 52, 0.5);
+$primary-disabled: hsla(217, 99, 52, 0.5);
 $red-disabled: hsla(352, 88, 46, 0.5);
 $yellow-disabled: hsla(40, 93, 49, 0.5);
 $green-disabled: hsla(144, 65, 41, 0.5);
 $grey-disabled: hsla(260, 4, 21, 0.5);
+// focused
+$primary-focus: 0px 0px 0px 3px hsla(217, 99, 62, 0.4);
+$red-focus: 0px 0px 0px 3px hsla(352, 88, 56, 0.4);
+$yellow-focus: 0px 0px 0px 3px hsla(40, 93, 59, 0.4);
+$green-focus: 0px 0px 0px 3px hsla(144, 65, 51, 0.4);
+$grey-focus: 0px 0px 0px 3px hsla(260, 4, 31, 0.4);
 
 // Imports
+// components
 @import "buttons";
 @import "cards";
 @import "input-feilds";
 @import "navigation";
 @import "tables";
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  margin: 0;
+  padding: 50px;
+}
