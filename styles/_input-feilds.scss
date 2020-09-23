@@ -31,14 +31,27 @@
         }
       }
     }
-    &-yellow {
+    &-error {
       input {
         &:focus {
-          border: 1px solid $yellow;
-          box-shadow: $yellow-focus;
+          border: 1px solid $red;
+          box-shadow: $red-focus;
           + {
             label {
-              color: $yellow;
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+    &-success {
+      input {
+        &:focus {
+          border: 1px solid $green;
+          box-shadow: $green-focus;
+          + {
+            label {
+              color: $green;
             }
           }
         }
