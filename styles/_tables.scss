@@ -1,0 +1,66 @@
+table {
+  // Common table styles
+  &.table,
+  &.table-border,
+  &.table-border-hor,
+  &.table-border-ver {
+    border-collapse: collapse;
+    border: 1px solid $line-1;
+    tr {
+      &:first-child {
+        border-style: solid;
+        border-color: $line-1;
+        border-width: 1px 1px 2px 1px;
+      }
+      th {
+        background: $white-3;
+        padding: 16px;
+      }
+      td {
+        padding: 16px;
+      }
+    }
+  }
+
+  // Table border styles
+  &.table-border {
+    tr {
+      th,
+      td {
+        border: 1px solid $line-1;
+      }
+    }
+
+    &-hor {
+      tr {
+        border-bottom: 1px solid $line-1;
+        th,
+        td {
+          &:first-child {
+            border-right: 1px solid $line-1;
+          }
+        }
+      }
+    }
+
+    &-ver {
+      tr {
+        th,
+        td {
+          border-right: 1px solid $line-1;
+        }
+      }
+    }
+  }
+}
+
+// Table stripe styles
+table {
+  &.table-stripe {
+    tr {
+      &:nth-child(odd) {
+        background-color: $white-2;
+      }
+    }
+  }
+}

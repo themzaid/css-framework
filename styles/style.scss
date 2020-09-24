@@ -7,6 +7,9 @@ $red: hsla(352, 88, 52, 1);
 $yellow: hsla(40, 93, 55, 1);
 $green: hsla(144, 65, 47, 1);
 $grey: hsla(260, 4, 31, 1);
+$white-1: hsla(255, 255, 255, 1);
+$white-2: hsla(220, 12, 96, 1);
+$white-3: hsla(220, 12, 90, 1);
 
 // text
 $txt-pri: hsla(210, 3, 12, 1);
@@ -39,6 +42,10 @@ $red-focus: 0px 0px 0px 3px hsla(352, 88, 56, 0.4);
 $yellow-focus: 0px 0px 0px 3px hsla(40, 93, 59, 0.4);
 $green-focus: 0px 0px 0px 3px hsla(144, 65, 51, 0.4);
 $grey-focus: 0px 0px 0px 3px hsla(260, 4, 31, 0.4);
+
+// Lines
+$line-1: #e1e2e6;
+$line-2: #b8bdc7;
 
 // Imports
 // components
