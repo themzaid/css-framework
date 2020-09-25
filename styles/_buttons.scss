@@ -22,7 +22,7 @@
   &:focus {
     box-shadow: $primary-focus;
   }
-  &__red {
+  &--red {
     background: $red;
     &:hover {
       background: $red-hover;
@@ -37,7 +37,7 @@
       box-shadow: $red-focus;
     }
   }
-  &__yellow {
+  &--yellow {
     background: $yellow;
     &:hover {
       background: $yellow-hover;
@@ -52,7 +52,7 @@
       box-shadow: $yellow-focus;
     }
   }
-  &__green {
+  &--green {
     background: $green;
     &:hover {
       background: $green-hover;
@@ -67,7 +67,7 @@
       box-shadow: $green-focus;
     }
   }
-  &__grey {
+  &--grey {
     background: $grey;
     &:hover {
       background: $grey-hover;
@@ -84,7 +84,7 @@
   }
   &__pill {
     border-radius: 50px;
-    &__red {
+    &--red {
       background: $red;
       &:hover {
         background: $red-hover;
@@ -99,7 +99,7 @@
         box-shadow: $red-focus;
       }
     }
-    &__yellow {
+    &--yellow {
       background: $yellow;
       &:hover {
         background: $yellow-hover;
@@ -114,7 +114,7 @@
         box-shadow: $yellow-focus;
       }
     }
-    &__green {
+    &--green {
       background: $green;
       &:hover {
         background: $green-hover;
@@ -129,7 +129,7 @@
         box-shadow: $green-focus;
       }
     }
-    &__grey {
+    &--grey {
       background: $grey;
       &:hover {
         background: $grey-hover;
@@ -172,7 +172,7 @@
   &:focus {
     box-shadow: $primary-focus;
   }
-  &__red {
+  &--red {
     color: $red;
     border: 1px solid $red;
     &:hover {
@@ -191,7 +191,7 @@
       box-shadow: $red-focus;
     }
   }
-  &__yellow {
+  &--yellow {
     color: $yellow;
     border: 1px solid $yellow;
     &:hover {
@@ -210,7 +210,7 @@
       box-shadow: $yellow-focus;
     }
   }
-  &__green {
+  &--green {
     color: $green;
     border: 1px solid $green;
     &:hover {
@@ -229,7 +229,7 @@
       box-shadow: $green-focus;
     }
   }
-  &__grey {
+  &--grey {
     color: $grey;
     border: 1px solid $grey;
     &:hover {
@@ -253,7 +253,7 @@
   }
   &__pill {
     border-radius: 50px;
-    &__red {
+    &--red {
       color: $red;
       border: 1px solid $red;
       &:hover {
@@ -272,7 +272,7 @@
         box-shadow: $red-focus;
       }
     }
-    &__yellow {
+    &--yellow {
       color: $yellow;
       border: 1px solid $yellow;
       &:hover {
@@ -291,7 +291,7 @@
         box-shadow: $yellow-focus;
       }
     }
-    &__green {
+    &--green {
       color: $green;
       border: 1px solid $green;
       &:hover {
@@ -310,7 +310,7 @@
         box-shadow: $green-focus;
       }
     }
-    &__grey {
+    &--grey {
       color: $grey;
       border: 1px solid $grey;
       &:hover {

@@ -1,19 +1,18 @@
 .form {
   width: 500px;
-  border: 1px solid #d2d2d2;
   .input-field {
     width: 100%;
     max-width: 400px;
     display: flex;
     flex-direction: column-reverse;
     label {
-      font-size: 13px;
       color: $txt-ter;
+      font-size: 13px;
       font-weight: 500;
     }
     input {
       color: $txt-sec;
-      padding: 10px 12px;
+      padding: 10px 10px;
       font-size: 15px;
       border-radius: 6px;
       border: 1px solid $txt-ter;
@@ -22,7 +21,8 @@
       margin: 3px 0 10px 0;
       &::placeholder {
         letter-spacing: 0.3px;
-        font-weight: 300;
+        font-weight: 400;
+        color: $txt-ter;
       }
       &:focus {
         box-shadow: $primary-focus;
@@ -58,6 +58,7 @@
       position: relative;
       label {
         font-size: 15px;
+        font-weight: 400;
         color: $txt-ter;
         position: absolute;
         bottom: 12px;
@@ -67,17 +68,16 @@
         height: auto;
         pointer-events: none;
         // border: 1px solid blue;
-        padding: 0 0 12px 14.5px;
+        padding: 0 0 12px 10.5px;
         transition: all 150ms ease-out;
       }
       input {
         color: $txt-sec;
         width: 400px;
         margin: 10px 0;
-        // height: 100%;
-        padding: 22px 0 7px 14px;
-        // height: 50px;
-        // padding-left: 12px;
+        // padding: 22px 0 9px 10px;
+        height: 50px;
+        padding-left: 10px;
         font-size: 15px;
         border-radius: 6px;
         border: none;
@@ -86,9 +86,14 @@
         border: 1px solid #77737d;
         &:focus + label,
         &:valid + label {
-          transform: translateY(-50%);
+          transform: translateY(-11px);
           color: $primary;
           font-size: 12px;
+          font-weight: 500;
+        }
+        &::placeholder {
+          letter-spacing: 0.3px;
+          border: 1px solid green;
         }
       }
       input:focus {
