@@ -4,9 +4,12 @@
   border-radius: 6px;
   background: $primary;
   color: white;
+  font-weight: 500;
+  letter-spacing: 0.3px;
   border: none;
   outline: none;
   transition: $transition;
+  cursor: pointer;
   &:hover {
     background: $primary-hover;
   }
@@ -144,6 +147,7 @@
   }
 }
 .btnout {
+  font-weight: 500;
   padding: 10px 20px;
   border-radius: 6px;
   color: $primary;
@@ -152,6 +156,7 @@
   background: none;
   border: 1px solid $primary;
   transition: $transition;
+  cursor: pointer;
   &:hover {
     color: $primary-hover;
     border: 1px solid $primary-hover;
@@ -328,4 +333,8 @@
       }
     }
   }
+}
+
+:disabled {
+  cursor: initial;
 }
