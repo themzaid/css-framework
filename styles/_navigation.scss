@@ -1,1 +1,59 @@
+// Variables
+$navBG: #4c4f52;
 
+nav {
+  color: $white-2;
+  height: 70px;
+  width: 100%;
+  background: $navBG;
+  display: grid;
+  .nav-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 767px;
+    // border: 1px solid #bbb;
+    padding: 0 22px;
+    box-sizing: border-box;
+    .logo {
+      // border: 1px solid #888;
+      padding: 2px;
+    }
+    .menu {
+      padding: 2px;
+      // label toggle
+      label {
+        color: $white-1;
+      }
+      #menu:checked ~ label {
+        color: $white-3;
+      }
+      // menu toggle
+      #menu {
+        display: none;
+      }
+      #menu:checked ~ .menu__items {
+        display: block;
+      }
+      // text toggle
+      .close {
+        display: none;
+      }
+      #menu:checked ~ .menu {
+        display: none;
+      }
+      #menu:checked ~ .close {
+        display: block;
+      }
+
+      &__items {
+        background: $navBG;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        display: none;
+      }
+    }
+  }
+}
