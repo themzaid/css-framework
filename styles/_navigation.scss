@@ -1,5 +1,6 @@
 // Variables
 $navBG: #4c4f52;
+$navBG-hover: hsl(210, 4%, 41%);
 
 body {
   overflow-x: hidden;
@@ -40,42 +41,46 @@ nav {
       // checkbox
       #menu__checkbox {
         display: none;
+        // label text checked
+        &:checked ~ .menu__btn__menu {
+          display: none;
+        }
+        &:checked ~ .menu__btn__close {
+          display: block;
+        }
+        // label style clicked
+        &:checked ~ .menu__btn {
+          opacity: 1;
+        }
+        // menu transition
+        &:checked ~ .menu__items {
+          right: 0%;
+        }
       }
       &__btn {
         // border: 2px solid red;
         display: grid;
         height: 100%;
-        color: $white-2;
+        color: $white-1;
+        transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        opacity: 0.8;
         cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
         &__menu {
           margin: auto;
-          // border: 1px solid black;
         }
-        // label text toggle
         &__close {
           display: none;
           margin: auto;
         }
-        // label style toggle
-        #menu__checkbox:checked ~ .menu__btn {
-          // color: $white-3;
-          color: black;
-        }
-        #menu__checkbox:checked ~ .menu__btn__menu {
-          display: none;
-        }
-        #menu__checkbox:checked ~ .menu__btn__close {
-          display: block;
-        }
       }
-      // menu toggle
-      #menu__checkbox:checked ~ .menu__items {
-        right: 0%;
-      }
+
       &__items {
         padding: 20px;
         font-size: 24px;
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: 0.5px;
         background: $navBG;
         position: absolute;
@@ -89,18 +94,21 @@ nav {
         transition: 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
         a {
           display: inline-block;
+          line-height: 150%;
           text-decoration: none;
           color: $white-1;
           opacity: 0.6;
-          // border: 1px solid black;
-          padding: 8px 10px 8px 0px;
+          border-radius: 6px;
+          padding: 8px 10px 8px 10px;
           box-sizing: border-box;
-          margin: 4px 0;
+          // margin: 4px 0;
           width: 100%;
           // border: 1px solid grey;
           transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
           &:hover {
-            opacity: 0.9;
+            opacity: 1;
+            padding: auto 4px;
+            background: $navBG-hover;
           }
         }
       }
