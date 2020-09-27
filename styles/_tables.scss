@@ -18,6 +18,9 @@ table {
       }
       td {
         padding: 16px;
+        &:first-child {
+          border-right: 1px solid $line-1;
+        }
       }
     }
   }

@@ -1,8 +1,11 @@
 // Variables
 $navBG: #4c4f52;
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
-  color: $white-2;
   height: 70px;
   width: 100%;
   background: $navBG;
@@ -12,47 +15,94 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: inherit;
     max-width: 767px;
     // border: 1px solid #bbb;
-    padding: 0 22px;
     box-sizing: border-box;
     .logo {
       // border: 1px solid #888;
-      padding: 2px;
+      width: 70px;
+      height: 70px;
+      box-sizing: border-box;
+      display: grid;
+      #logo {
+        height: 30px;
+        width: 30px;
+        background-color: #888888;
+        margin: auto;
+      }
     }
     .menu {
-      padding: 2px;
-      // label toggle
-      label {
-        color: $white-1;
+      // border: 2px solid yellow;
+      width: 70px;
+      height: 70px;
+      box-sizing: border-box;
+      // checkbox
+      #menu__checkbox {
+        display: none;
       }
-      #menu:checked ~ label {
-        color: $white-3;
+      &__btn {
+        // border: 2px solid red;
+        display: grid;
+        height: 100%;
+        color: $white-2;
+        cursor: pointer;
+        &__menu {
+          margin: auto;
+          // border: 1px solid black;
+        }
+        // label text toggle
+        &__close {
+          display: none;
+          margin: auto;
+        }
+        // label style toggle
+        #menu__checkbox:checked ~ .menu__btn {
+          // color: $white-3;
+          color: black;
+        }
+        #menu__checkbox:checked ~ .menu__btn__menu {
+          display: none;
+        }
+        #menu__checkbox:checked ~ .menu__btn__close {
+          display: block;
+        }
       }
       // menu toggle
-      #menu {
-        display: none;
+      #menu__checkbox:checked ~ .menu__items {
+        right: 0%;
       }
-      #menu:checked ~ .menu__items {
-        display: block;
-      }
-      // text toggle
-      .close {
-        display: none;
-      }
-      #menu:checked ~ .menu {
-        display: none;
-      }
-      #menu:checked ~ .close {
-        display: block;
-      }
-
       &__items {
+        padding: 20px;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
         background: $navBG;
         position: absolute;
-        right: 0;
+        right: -100%;
         top: 70px;
-        display: none;
+        max-width: 100%;
+        width: 600px;
+        height: 100%;
+        // border: 4px solid green;
+        box-sizing: border-box;
+        transition: 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: $white-1;
+          opacity: 0.6;
+          // border: 1px solid black;
+          padding: 8px 10px 8px 0px;
+          box-sizing: border-box;
+          margin: 4px 0;
+          width: 100%;
+          // border: 1px solid grey;
+          transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+          &:hover {
+            opacity: 0.9;
+          }
+        }
       }
     }
   }
