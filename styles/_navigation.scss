@@ -31,6 +31,7 @@ nav {
         width: 30px;
         background-color: #888888;
         margin: auto;
+        margin-left: 20px;
       }
     }
     .menu {
@@ -42,12 +43,12 @@ nav {
       #menu__checkbox {
         display: none;
         // label text checked
-        &:checked ~ .menu__btn__menu {
+        &:checked ~ .menu__btn--default {
           display: none;
         }
-        &:checked ~ .menu__btn__close {
-          display: block;
-        }
+        // &:checked ~ .menu__btn--close {
+        //   display: block;
+        // }
         // label style clicked
         &:checked ~ .menu__btn {
           opacity: 1;
@@ -59,6 +60,7 @@ nav {
       }
       &__btn {
         // border: 2px solid red;
+        box-sizing: border-box;
         display: grid;
         height: 100%;
         color: $white-1;
@@ -68,12 +70,15 @@ nav {
         &:hover {
           opacity: 1;
         }
-        &__menu {
+        &--default {
           margin: auto;
+          // border: 1px solid grey;
+          margin-right: 20px;
         }
-        &__close {
+        &--close {
           display: none;
           margin: auto;
+          margin-right: 20px;
         }
       }
 
@@ -81,27 +86,29 @@ nav {
         padding: 20px;
         font-size: 24px;
         font-weight: 400;
-        letter-spacing: 0.5px;
         background: $navBG;
         position: absolute;
         right: -100%;
         top: 70px;
         max-width: 100%;
         width: 600px;
-        height: 100%;
+        // height: 100%;
+        height: calc(100% - 70px);
         // border: 4px solid green;
         box-sizing: border-box;
         transition: 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
+        padding-top: 30px;
         a {
           display: inline-block;
-          line-height: 150%;
+          line-height: 140%;
           text-decoration: none;
           color: $white-1;
           opacity: 0.6;
           border-radius: 6px;
           padding: 8px 10px 8px 10px;
           box-sizing: border-box;
-          // margin: 4px 0;
+          // text-align: right;
+          // margin-top: 30px;
           width: 100%;
           // border: 1px solid grey;
           transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -109,6 +116,28 @@ nav {
             opacity: 1;
             padding: auto 4px;
             background: $navBG-hover;
+          }
+        }
+        &__links {
+          // border: 1px solid grey;
+          margin-left: 10px;
+          margin-top: 100px;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+          font-weight: 400;
+          color: $white-1;
+          &__link {
+            padding-bottom: 0px;
+            width: fit-content;
+            margin-bottom: 30px;
+            // border-bottom: 1px solid #00000000;
+            border-bottom: 1px solid $white-1;
+            opacity: 0.8;
+            cursor: pointer;
+            transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }
