@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <!-- Navigation menu -->
     <nav>
       <div class="nav-wrapper">
         <div class="logo">
           <a href="#" id="logo"></a>
         </div>
         <div class="menu">
-          <input type="checkbox" id="menu__checkbox" />
+          <input type="checkbox" class="menu__checkbox" id="menu__checkbox" />
           <label class="menu__btn" for="menu__checkbox">
             <div class="menu__btn--default">Menu</div>
             <div class="menu__btn--close">Close</div>
@@ -33,6 +34,29 @@
         </div>
       </div>
     </nav>
+    <!-- end Navigation menu-->
+
+    <div class="container">
+      <h3>This is a Modal</h3>
+      <button class="modal-btn-open">Open Modal</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+      <button class="modal-btn-close"></button>
+      <h1 class="modal-title">This is a modal</h1>
+      <p class="modal-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        recusandae consectetur natus aut fugit ullam accusamus similique maxime
+        numquam culpa sunt magni sit, fuga eum, aspernatur obcaecati aperiam
+        odio, iusto molestias vero! Ea, suscipit laboriosam. Ipsum sequi
+        adipisci illo magni odio culpa! Dolorem qui nobis fugiat, mollitia
+        cumque amet incidunt.
+      </p>
+    </div>
+    <!-- end Modal -->
+
+    <script src="script.js"></script>
 
     <script>
       document.querySelector("body").style.padding = 0;
