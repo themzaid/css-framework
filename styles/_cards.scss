@@ -65,6 +65,9 @@
     height: 45px;
     position: relative;
     border-top: 1px solid #b8bdc7;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
     cursor: pointer;
     &:active {
       opacity: 0.8;
