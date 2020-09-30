@@ -56,7 +56,7 @@
     font-weight: bold;
     color: #4e4c52;
   }
-  &__button {
+  button {
     width: 100%;
     border: none;
     outline: none;
@@ -65,8 +65,9 @@
     height: 45px;
     position: relative;
     border-top: 1px solid #b8bdc7;
+    cursor: pointer;
     &:active {
-      transform: scale(1);
+      opacity: 0.8;
     }
   }
 }
