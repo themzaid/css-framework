@@ -1,0 +1,38 @@
+.container {
+  text-align-last: center;
+}
+
+.modal {
+  border: 1px solid #dddddd;
+  background: #fafafa;
+  width: 40%;
+  height: 60%;
+  position: fixed;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 2px 6px #cccccc88;
+  box-shadow: 0px 2px 6px #cccccc88;
+  display: none;
+}
+
+.modal-btn-close {
+  height: 50px;
+  width: 50px;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  border-radius: 6px;
+  outline: none;
+}
+
+.modal-btn-open {
+  height: 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
