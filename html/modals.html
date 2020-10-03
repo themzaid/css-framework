@@ -9,12 +9,12 @@
   <body>
     <div class="container">
       <h3>This is a Modal</h3>
-      <button class="modal-btn-open">Open Modal</button>
+      <button class="modal-btn-open btn btn__primary">Open Modal</button>
     </div>
 
     <!-- Modal -->
     <div class="modal">
-      <button class="modal-btn-close"></button>
+      <button class="modal-btn-close btn btn--red"></button>
       <h1 class="modal-title">This is a modal</h1>
       <p class="modal-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
@@ -59,7 +59,7 @@
       closeModal.addEventListener("click", function (e) {
         modal.close();
       });
-      modal.changeContent("New Title Alternate", "New Text Alternate");
+      // modal.changeContent("New Title Alternate", "New Text Alternate");
 
       // end Modal
     </script>
