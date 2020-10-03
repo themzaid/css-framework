@@ -1,4 +1,11 @@
-/styles.css.map
 /.DS_Store
-/styles.css
 /node_modules
+
+# Styles
+# root
+/styles.css
+/styles.css.map
+
+# public
+/public/stylesheets/styles.css
+/public/stylesheets/styles.css.map
